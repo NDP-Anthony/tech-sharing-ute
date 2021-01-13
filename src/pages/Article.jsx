@@ -28,7 +28,7 @@ const Article = ({ articles, role, userAvatarUrl, user }) => {
     // const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
     // article &&
     //     axios.post(
-    //         'http://localhost:8080/webproj/getArticleVoteState',
+    //         'http://123.21.192.99:8080/webproj/getArticleVoteState',
     //         {
     //             _id: article._id,
     //             username: user,
@@ -41,7 +41,7 @@ const Article = ({ articles, role, userAvatarUrl, user }) => {
     // article &&
     //     axios
     //         .post(
-    //             'http://localhost:8080/webproj/postArticleVoteState',
+    //             'http://123.21.192.99:8080/webproj/postArticleVoteState',
     //             {
     //                 _id: article._id,
     //                 username: user,

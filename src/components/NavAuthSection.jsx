@@ -24,7 +24,7 @@ const NavAuthSection = ({ role, user, setCurrentCategory, userAvatarUrl }) => {
 
         axios
             .post(
-                'http://localhost:8080/webproj/getUserAvatar',
+                'http://123.21.192.99:8080/webproj/getUserAvatar',
                 {
                     username: user,
                     avatarUrl: avatarUpdateUrl,

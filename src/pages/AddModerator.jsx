@@ -34,7 +34,7 @@ const AddModerator = () => {
         ) {
             axios
                 .post(
-                    `http://localhost:8080/webproj/getModCreateAccInfo`,
+                    `http://123.21.192.99:8080/webproj/getModCreateAccInfo`,
                     apiData,
                     {
                         headers,
@@ -50,7 +50,7 @@ const AddModerator = () => {
 
         axios
             .post(
-                'http://localhost:8080/webproj/postIsNotExistModUsername',
+                'http://123.21.192.99:8080/webproj/postIsNotExistModUsername',
                 {
                     currentUsername: e.target.value,
                 },

@@ -8,7 +8,7 @@ const ManageModerator = () => {
         const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
         axios
             .post(
-                'http://localhost:8080/webproj/postModsList',
+                'http://123.21.192.99:8080/webproj/postModsList',
                 {},
                 { headers }
             )
@@ -19,7 +19,7 @@ const ManageModerator = () => {
     const deleteModeratorHandler = (moderator) => {
         const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
         axios.post(
-            'http://localhost:8080/webproj/getModToDelete',
+            'http://123.21.192.99:8080/webproj/getModToDelete',
             {
                 username: moderator.username,
             },

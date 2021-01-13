@@ -33,7 +33,7 @@ const SignUp = () => {
         ) {
             axios
                 .post(
-                    `http://localhost:8080/webproj/getSignUpInfo`,
+                    `http://123.21.192.99:8080/webproj/getSignUpInfo`,
                     apiData,
                     {
                         headers,
@@ -49,7 +49,7 @@ const SignUp = () => {
 
         axios
             .post(
-                'http://localhost:8080/webproj/postIsNotExistNormUsername',
+                'http://123.21.192.99:8080/webproj/postIsNotExistNormUsername',
                 {
                     currentUsername: e.target.value,
                 },

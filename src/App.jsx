@@ -46,7 +46,7 @@ function App() {
         const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
         axios
             .post(
-                `http://localhost:8080/webproj/postArticlesList`,
+                `http://123.21.192.99:8080/webproj/postArticlesList`,
                 {
                     pageNumber: currentPage,
                     category: currentCategory,
@@ -63,7 +63,7 @@ function App() {
 
         axios
             .post(
-                'http://localhost:8080/webproj/postUserAvatar',
+                'http://123.21.192.99:8080/webproj/postUserAvatar',
                 {
                     username: user,
                 },

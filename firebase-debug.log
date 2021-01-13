@@ -1,0 +1,30 @@
+[debug] [2021-01-13T13:50:12.299Z] ----------------------------------------------------------------------
+[debug] [2021-01-13T13:50:12.302Z] Command:       /home/linuxbrew/.linuxbrew/Cellar/node/15.5.1/bin/node /home/linuxbrew/.linuxbrew/bin/firebase deploy --only hosting:tech-sharing-proj1
+[debug] [2021-01-13T13:50:12.302Z] CLI Version:   9.2.0
+[debug] [2021-01-13T13:50:12.302Z] Platform:      linux
+[debug] [2021-01-13T13:50:12.302Z] Node Version:  v15.5.1
+[debug] [2021-01-13T13:50:12.303Z] Time:          Wed Jan 13 2021 20:50:12 GMT+0700 (Indochina Time)
+[debug] [2021-01-13T13:50:12.303Z] ----------------------------------------------------------------------
+[debug] [2021-01-13T13:50:12.303Z] 
+[debug] [2021-01-13T13:50:12.312Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-13T13:50:12.313Z] > authorizing via signed-in user
+[debug] [2021-01-13T13:50:12.313Z] [iam] checking project tech-sharing-ute for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-13T13:50:12.317Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tech-sharing-ute:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-13T13:50:18.762Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 13 Jan 2021 13:50:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=868","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-13T13:50:18.765Z] > refreshing access token with scopes: []
+[debug] [2021-01-13T13:50:18.765Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-13T13:50:19.423Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 13 Jan 2021 13:50:19 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-13T13:50:19.436Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tech-sharing-ute [none]
+[debug] [2021-01-13T13:50:20.239Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tech-sharing-ute 200
+[debug] [2021-01-13T13:50:20.240Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tech-sharing-ute {"projectId":"tech-sharing-ute","projectNumber":"173075727517","displayName":"tech-sharing-ute","name":"projects/tech-sharing-ute","resources":{"hostingSite":"tech-sharing-ute"},"state":"ACTIVE"}
+[debug] [2021-01-13T13:50:20.537Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:278:15)
+    at validateString (node:internal/validators:123:11)
+    at Object.join (node:path:1081:7)
+    at Object.checkFunctionsSDKVersion [as fn] (/home/linuxbrew/.linuxbrew/lib/node_modules/firebase-tools/lib/checkFirebaseSDKVersion.js:34:28)
+    at /home/linuxbrew/.linuxbrew/lib/node_modules/firebase-tools/lib/command.js:161:30
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.

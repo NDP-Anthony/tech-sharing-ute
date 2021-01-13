@@ -19,7 +19,7 @@ const Comments = ({ role, userAvatarUrl, articleId, user }) => {
         const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
         axios
             .post(
-                'http://localhost:8080/webproj/getComment',
+                'http://123.21.192.99:8080/webproj/getComment',
                 {
                     _id: articleId,
                     username: user,
@@ -74,7 +74,7 @@ const Comments = ({ role, userAvatarUrl, articleId, user }) => {
         const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
         axios
             .post(
-                'http://localhost:8080/webproj/postCommentsList',
+                'http://123.21.192.99:8080/webproj/postCommentsList',
                 {
                     _id: articleId,
                 },

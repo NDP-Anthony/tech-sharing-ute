@@ -14,7 +14,7 @@ const CreateArticle = ({ user }) => {
     const markdown = new Remarkable();
 
     const createArticleHandler = () => {
-        const apiUrl = 'http://localhost:8080/webproj/getArticle';
+        const apiUrl = 'http://123.21.192.99:8080/webproj/getArticle';
         const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
         const data = {
             title: title,
